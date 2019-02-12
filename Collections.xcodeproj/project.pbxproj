@@ -10,7 +10,8 @@
 		5B4D5093219A1DB50003CD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D5092219A1DB50003CD84 /* AppDelegate.swift */; };
 		5B4D5095219A1DB60003CD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D5094219A1DB60003CD84 /* Assets.xcassets */; };
 		5B4D5098219A1DB60003CD84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D5096219A1DB60003CD84 /* MainMenu.xib */; };
-		5B4D50A4219A1DB60003CD84 /* CollectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D50A3219A1DB60003CD84 /* CollectionsTests.swift */; };
+		5B74724C219ED12A00C42218 /* FunctionalMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B74724B219ED12A00C42218 /* FunctionalMethodTests.swift */; };
+		5B8F2F64219C1C48003FF792 /* CollectionMutabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F2F63219C1C48003FF792 /* CollectionMutabilityTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,9 @@
 		5B4D5099219A1DB60003CD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B4D509A219A1DB60003CD84 /* Collections.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Collections.entitlements; sourceTree = "<group>"; };
 		5B4D509F219A1DB60003CD84 /* CollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B4D50A3219A1DB60003CD84 /* CollectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsTests.swift; sourceTree = "<group>"; };
 		5B4D50A5219A1DB60003CD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B74724B219ED12A00C42218 /* FunctionalMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalMethodTests.swift; sourceTree = "<group>"; };
+		5B8F2F63219C1C48003FF792 /* CollectionMutabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMutabilityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +88,35 @@
 		5B4D50A2219A1DB60003CD84 /* CollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B4D50A3219A1DB60003CD84 /* CollectionsTests.swift */,
+				5B8F2F62219C1C18003FF792 /* 1-mutability */,
+				5B747249219ECF5400C42218 /* 2-info */,
+				5B74724A219ECF9C00C42218 /* 3-functional */,
 				5B4D50A5219A1DB60003CD84 /* Info.plist */,
 			);
 			path = CollectionsTests;
+			sourceTree = "<group>";
+		};
+		5B747249219ECF5400C42218 /* 2-info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2-info";
+			sourceTree = "<group>";
+		};
+		5B74724A219ECF9C00C42218 /* 3-functional */ = {
+			isa = PBXGroup;
+			children = (
+				5B74724B219ED12A00C42218 /* FunctionalMethodTests.swift */,
+			);
+			path = "3-functional";
+			sourceTree = "<group>";
+		};
+		5B8F2F62219C1C18003FF792 /* 1-mutability */ = {
+			isa = PBXGroup;
+			children = (
+				5B8F2F63219C1C48003FF792 /* CollectionMutabilityTests.swift */,
+			);
+			path = "1-mutability";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +172,6 @@
 					};
 					5B4D509E219A1DB60003CD84 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 5B4D508E219A1DB50003CD84;
 					};
 				};
 			};
@@ -200,7 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B4D50A4219A1DB60003CD84 /* CollectionsTests.swift in Sources */,
+				5B8F2F64219C1C48003FF792 /* CollectionMutabilityTests.swift in Sources */,
+				5B74724C219ED12A00C42218 /* FunctionalMethodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +410,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L7WK77VYXN;
@@ -396,7 +422,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.awesome-dev.mobile.CollectionsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collections.app/Contents/MacOS/Collections";
 			};
 			name = Debug;
 		};
@@ -404,7 +429,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L7WK77VYXN;
@@ -417,7 +441,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.awesome-dev.mobile.CollectionsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collections.app/Contents/MacOS/Collections";
 			};
 			name = Release;
 		};
