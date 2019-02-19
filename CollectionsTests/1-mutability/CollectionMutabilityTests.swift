@@ -31,7 +31,7 @@ class ArrayMutabilityTests: XCTestCase {
     func testAddingValuesToDictionaries() {
         var airportMappings = ["LAX" : "Los Angeles Internation", "BHX" : "Birmingham International"]
         
-        airportMappings["LHR"] = "London Heathrow"
+        //Add your solution here
         
         XCTAssert(airportMappings == [
             "LAX" : "Los Angeles Internation",
