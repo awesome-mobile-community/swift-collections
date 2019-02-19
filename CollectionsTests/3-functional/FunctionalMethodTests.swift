@@ -9,9 +9,6 @@
 import XCTest
 
 class FunctionalMethodTests: XCTestCase {
-
-    
-    
     //Exercise 1a: Double everything contained in the array
     func testDoubleEverything() {
         let integerArray = [1,2,3,4,5,6,7,8,9]
