@@ -13,7 +13,7 @@ class ArrayMutabilityTests: XCTestCase {
     func testAppendingSingleValuesToArrays() {
         var integerArray = [1,2,3,4,5]
     
-        integerArray.append(6)
+        //Add your solution here
         
         XCTAssert(integerArray == [1,2,3,4,5,6])
     }
@@ -22,7 +22,7 @@ class ArrayMutabilityTests: XCTestCase {
     func testAddingValuesToSets() {
         var partialAlphabet: Set<Character> = ["a", "b", "c", "d"]
         
-        partialAlphabet.insert("e")
+        //Add your solution here
         
         XCTAssert(partialAlphabet == ["a", "b", "c", "d", "e"])
     }
@@ -45,7 +45,7 @@ class ArrayMutabilityTests: XCTestCase {
         var integerArray = [1,2,3,4,5]
         let intArrayTwo  = [6,7,8,9,10]
         
-        integerArray.append(contentsOf: intArrayTwo)
+        //Add your solution here
         
         XCTAssert(integerArray == [1,2,3,4,5,6,7,8,9,10])
     }
@@ -55,7 +55,7 @@ class ArrayMutabilityTests: XCTestCase {
         var partialAlphabet: Set<Character>  = ["a", "b", "c", "d"]
         let partialAlphabet2: Set<Character> = ["e", "f", "g", "h"]
         
-        partialAlphabet = partialAlphabet.union(partialAlphabet2)
+        //Add your solution here
         
         XCTAssert(partialAlphabet == ["a", "b", "c", "d", "e", "f", "g", "h"])
     }
@@ -66,7 +66,7 @@ class ArrayMutabilityTests: XCTestCase {
         
         let moreAirports = ["DUB" : "Dublin", "AGP" : "Málaga Airport"]
         
-        moreAirports.forEach({ airportMappings[$0] = $1 })
+        //Add your solution here
     
         XCTAssert(NSDictionary(dictionary: airportMappings).isEqual(to: [
             "LAX" : "Los Angeles Internation",
